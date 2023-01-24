@@ -6,12 +6,12 @@ const App = () => {
 
   return (
     <div className="ball">
-      <h1 className="count" ondoubleclick={() => alert("cant edit it")}>
+      <h1 className="count" ondoubleclick={() => {alert("cant edit it")}}>
         {count}
       </h1>
       <button
         className="increment-button"
-        onclick={(count) => setCount(count + 1)}
+        onclick={(count) => {setCount(count + 1)}}
       >
         Increment
       </button>
